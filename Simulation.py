@@ -376,7 +376,7 @@ def task(idx):
 if __name__ == '__main__':
     
     p = Pool(10)    # Creat multiple process
-    for idx in range(0, 150, 1):
+    for idx in range(0, 135, 1):
         p.apply_async(task, args=(idx,))
     p.close()   # Close pool in case other tasks are submitted into the pool 
     p.join()    # Waite all the processes in the pool is finished

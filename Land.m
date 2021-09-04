@@ -6,7 +6,7 @@ T = 500;  %%total simulation time
 stable_time = 0; %%%% stable state (time after stable_time) data is used for landscape
 time_step = 0.005;  %%%firing rate is caculated for time step 
 time_window = 0.05;  %%%firing rate in the time window is averaged
-filenumber = 150;
+filenumber = 135;
 rate_number = (T - time_window) / time_step;
 firing_rate = zeros(rate_number * filenumber, 2);
 
